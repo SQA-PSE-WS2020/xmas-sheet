@@ -1,3 +1,3 @@
 # About
 
-This is an empty project for the PSE XMas sheet.
+This is a project for the xmas-sheet. It comes with JavaFX preconfigured.

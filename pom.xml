@@ -8,10 +8,28 @@
 
 	<properties>
 		<java.version>15</java.version>
+		<javafx.version>15.0.1</javafx.version>
 	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-controls</artifactId>
+			<version>${javafx.version}</version>
+		</dependency>
+	</dependencies>
 
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.openjfx</groupId>
+				<artifactId>javafx-maven-plugin</artifactId>
+				<version>0.0.5</version>
+				<configuration>
+					<mainClass>de.unistuttgart.iste.rss.oo.tictactoe.App</mainClass>
+				</configuration>
+			</plugin>
+
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.1</version>
@@ -20,19 +38,6 @@
 					<source>${java.version}</source>
 					<target>${java.version}</target>
 				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>exec-maven-plugin</artifactId>
-				<version>3.0.0</version>
-				<executions>
-					<execution>
-						<id>App</id>
-						<configuration>
-							<mainClass>de.unistuttgart.iste.rss.oo.tictactoe.App</mainClass>
-						</configuration>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 	</build>
