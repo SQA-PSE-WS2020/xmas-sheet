@@ -26,7 +26,7 @@
 				<artifactId>javafx-maven-plugin</artifactId>
 				<version>0.0.5</version>
 				<configuration>
-					<mainClass>de.unistuttgart.iste.rss.oo.tictactoe.App</mainClass>
+					<mainClass>de.unistuttgart.iste.rss.oo.tictactoe.main.App</mainClass>
 				</configuration>
 			</plugin>
 
